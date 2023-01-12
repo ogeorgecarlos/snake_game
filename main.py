@@ -22,10 +22,8 @@ while game_is_on:
         game_is_on = False
 
     # Check if the snake chocks with your own tails
-    for n in snake.list_t:
-        if n == snake.head:
-            pass
-        elif snake.head.distance(n) < 15:
+    for n in snake.list_t[1:]:
+        if snake.head.distance(n) < 15:
             turtle_text.game_over()
             game_is_on = False
 
