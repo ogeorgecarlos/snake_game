@@ -1,5 +1,8 @@
 from turtle import Screen
-from variables import snake
+from snake import Snake
+
+snake = Snake()
+
 # Screen's set
 # -----------------------
 s_width = 600
